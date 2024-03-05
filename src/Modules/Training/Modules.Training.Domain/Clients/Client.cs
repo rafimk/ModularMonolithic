@@ -1,4 +1,5 @@
 ﻿using Domain.Primitives;
+using Modules.Training.Domain.Trainers;
 using Shared.Results;
 using System;
 using System.Collections.Generic;

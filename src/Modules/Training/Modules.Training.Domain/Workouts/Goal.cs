@@ -17,7 +17,6 @@ public sealed class Goal : ValueObject
 
     public static Result<Goal> Create(GoalType type, string value) => Result.Success(new Goal(type, value));
 
-    /// <inheritdoc />
     protected override IEnumerable<object> GetAtomicValues()
     {
         yield return Type.Id;

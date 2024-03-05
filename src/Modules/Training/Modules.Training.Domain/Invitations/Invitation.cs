@@ -2,6 +2,7 @@
 using Domain.Time;
 using Modules.Training.Domain.Clients;
 using Modules.Training.Domain.Invitations.Events;
+using Modules.Training.Domain.Trainers;
 using Shared.Results;
 
 namespace Modules.Training.Domain.Invitations;
