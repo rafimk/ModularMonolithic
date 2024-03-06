@@ -1,11 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Infrastructure.BackgroundJobs;
+using Microsoft.Extensions.Options;
 
 namespace Modules.Training.Infrastructure.BackgroundJobs.ProcessOutboxMessages;
 
-internal class ProcessOutboxMessagesConfiguration
+internal sealed class ProcessOutboxMessagesConfiguration : IRecurringJobConfiguration
 {
+    private readonly ProcessOutboxMessagesOptions _options;
+
+    public ProcessOutboxMessagesConfiguration(IOptions<ProcessOutboxMessagesOptions> options) => _options = options.Value;
+
+    public string Name => typeof(ProcessOutboxMessagesJob).FullName!;
+
+    public Type Type => typeof(ProcessOutboxMessagesJob);
+
+    public int IntervalInSeconds => _options.IntervalInSeconds;
 }

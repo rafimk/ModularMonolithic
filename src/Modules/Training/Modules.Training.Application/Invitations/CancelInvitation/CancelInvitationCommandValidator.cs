@@ -1,4 +1,6 @@
-﻿using FluentValidation;
+﻿using Application.Extensions;
+using FluentValidation;
+using Modules.Training.Application.ValidationErrors;
 
 namespace Modules.Training.Application.Invitations.CancelInvitation;
 

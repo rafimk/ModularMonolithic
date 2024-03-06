@@ -16,6 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\Common\Infrastructure\Infrastructure.csproj" />
     <ProjectReference Include="..\Modules.Training.Application\Modules.Training.Application.csproj" />
+    <ProjectReference Include="..\Modules.Training.Persistence\Modules.Training.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

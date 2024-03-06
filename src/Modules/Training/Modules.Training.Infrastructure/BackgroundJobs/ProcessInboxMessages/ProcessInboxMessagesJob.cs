@@ -5,6 +5,7 @@ using Microsoft.Extensions.Options;
 using Polly.Retry;
 using Polly;
 using Quartz;
+using Newtonsoft.Json;
 
 namespace Modules.Training.Infrastructure.BackgroundJobs.ProcessInboxMessages;
 

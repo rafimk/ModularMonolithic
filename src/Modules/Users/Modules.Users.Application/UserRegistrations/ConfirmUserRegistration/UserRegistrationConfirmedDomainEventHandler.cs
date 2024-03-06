@@ -5,6 +5,7 @@ using Modules.Users.Domain.UserRegistrations;
 using Modules.Users.Domain.Users;
 using Modules.Users.Domain;
 using Shared.Results;
+using Application.Extensions;
 
 
 namespace Modules.Users.Application.UserRegistrations.ConfirmUserRegistration;

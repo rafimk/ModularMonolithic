@@ -1,4 +1,5 @@
 ﻿using Application.EventBus;
+using Application.Extensions;
 using Microsoft.Extensions.Logging;
 using Modules.Training.Domain;
 using Modules.Training.Domain.Clients;

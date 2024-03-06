@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Modules.Users.Persistence.Constants;
 
 namespace Modules.Users.Persistence;
 

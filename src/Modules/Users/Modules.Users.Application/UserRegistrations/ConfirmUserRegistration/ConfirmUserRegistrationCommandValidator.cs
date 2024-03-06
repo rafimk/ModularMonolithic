@@ -1,4 +1,5 @@
-﻿using FluentValidation;
+﻿using Application.Extensions;
+using FluentValidation;
 using Modules.Users.Application.ValidationErrors;
 
 namespace Modules.Users.Application.UserRegistrations.ConfirmUserRegistration;

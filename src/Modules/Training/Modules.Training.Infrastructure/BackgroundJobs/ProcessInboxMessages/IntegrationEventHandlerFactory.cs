@@ -1,6 +1,8 @@
-﻿using Application.EventBus;
+﻿using System.Collections.Concurrent;
+using Application.EventBus;
 using Infrastructure.Utilities;
-using System.Collections.Concurrent;
+using Shared.Extensions;
+
 
 
 namespace Modules.Training.Infrastructure.BackgroundJobs.ProcessInboxMessages;

@@ -3,6 +3,8 @@ using Microsoft.Extensions.Logging;
 using Modules.Users.Domain.UserRegistrations;
 using Modules.Users.Domain;
 using Shared.Results;
+using Modules.Training.IntegrationEvents;
+using Application.Extensions;
 
 
 namespace Modules.Users.Application.UserRegistrations.Events;
