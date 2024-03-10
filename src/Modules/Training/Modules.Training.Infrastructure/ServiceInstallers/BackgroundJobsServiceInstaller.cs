@@ -1,6 +1,9 @@
-﻿using Infrastructure.Configuration;
+﻿using Infrastructure.BackgroundJobs;
+using Infrastructure.Configuration;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Scrutor;
+using Shared.Extensions;
 
 namespace Modules.Training.Infrastructure.ServiceInstallers;
 

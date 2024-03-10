@@ -1,9 +1,12 @@
 ﻿using Application.Behaviors;
+using FluentValidation;
 using Infrastructure.Configuration;
 using Infrastructure.Utilities;
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Modules.Training.Infrastructure.Idempotence;
+using Shared.Extensions;
 
 namespace Modules.Training.Infrastructure.ServiceInstallers;
 
@@ -11,7 +14,7 @@ internal sealed class ApplicationServiceInstaller : IServiceInstaller
 {
     public void Install(IServiceCollection services, IConfiguration configuration) =>
         services
-            .AddMediatR(Application.AssemblyReference.Assembly)
+            .AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(AssemblyReference.Assembly))
             .AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationPipelineBehavior<,>))
             .AddValidatorsFromAssembly(Application.AssemblyReference.Assembly, includeInternalTypes: true)
             .Tap(DecorateDomainEventHandlersWithIdempotency)

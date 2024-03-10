@@ -16,4 +16,12 @@
     <PackageReference Include="Serilog" Version="3.1.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Authorization\Authorization.csproj" />
+    <ProjectReference Include="..\..\..\Common\Infrastructure\Infrastructure.csproj" />
+    <ProjectReference Include="..\Modules.Users.Application\Modules.Users.Application.csproj" />
+    <ProjectReference Include="..\Modules.Users.Endpoints\Modules.Users.Endpoints.csproj" />
+    <ProjectReference Include="..\Modules.Users.Persistence\Modules.Users.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>

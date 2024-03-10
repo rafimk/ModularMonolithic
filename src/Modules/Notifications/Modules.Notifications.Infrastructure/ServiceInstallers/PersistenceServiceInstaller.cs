@@ -1,4 +1,4 @@
-﻿using Infrastructure.Configuration;
+﻿﻿using Infrastructure.Configuration;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Options;
 using Modules.Notifications.Persistence;
 using Modules.Notifications.Persistence.Constants;
+using Persistence.Extensions;
 using Persistence.Interceptors;
 using Persistence.Options;
 using Shared.Extensions;

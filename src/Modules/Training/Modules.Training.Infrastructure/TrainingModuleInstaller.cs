@@ -1,4 +1,5 @@
 ﻿using Infrastructure.Configuration;
+using Infrastructure.Extensions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
