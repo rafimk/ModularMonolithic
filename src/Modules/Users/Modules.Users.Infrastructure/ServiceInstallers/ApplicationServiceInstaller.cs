@@ -14,7 +14,7 @@ internal sealed class ApplicationServiceInstaller : IServiceInstaller
 {
     public void Install(IServiceCollection services, IConfiguration configuration) =>
         services
-            .AddMediatR(Application.AssemblyReference.Assembly)
+            .AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(AssemblyReference.Assembly))
             .AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationPipelineBehavior<,>))
             .AddValidatorsFromAssembly(Application.AssemblyReference.Assembly, includeInternalTypes: true)
             .Tap(DecorateDomainEventHandlersWithIdempotency)
